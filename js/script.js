@@ -405,7 +405,7 @@ function addBook(title, author, gender, language, price, format, isbn, descripti
 
 
 
-function Normalbooks() {
+function Normalbooks(books) {
 	bookContainer.innerHTML = ""
 	const container = document.getElementById("bookContainer");
 	books.forEach((book) => {
@@ -512,14 +512,13 @@ function Normalbooks() {
 		section.appendChild(div);
 		container.appendChild(section);
 	});
-	function getImageName(Title) {
-		const imageName = Title.toLowerCase().replace(/[^a-z0-9- -ñ]+/g, '_');
-		return imageName;
-	}
 }
 
+function getImageName(Title) {
+	const imageName = Title.toLowerCase().replace(/[^a-z0-9- -ñ]+/g, '_');
+	return imageName;
+}
 Normalbooks();
-
 
 // search
 
