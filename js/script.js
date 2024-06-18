@@ -405,7 +405,7 @@ function addBook(title, author, gender, language, price, format, isbn, descripti
 
 
 
-function Normalbooks(books) {
+function Normalbooks() {
 	bookContainer.innerHTML = ""
 	const container = document.getElementById("bookContainer");
 	books.forEach((book) => {
@@ -420,7 +420,7 @@ function Normalbooks(books) {
 		
 
 		const img = document.createElement("img");
-		img.src = `Sena-Library/assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
 		img.alt = book.Title;
 		div.appendChild(img);
 
