@@ -339,6 +339,13 @@ footer>div{
 	padding: 0 1%;
 }
 /* ---------Media QUERY--------- */
+@media screen and (max-width:1080px) {
+	#nav_id > button{
+		font-size: 15px;
+		margin:0;
+	}
+
+}
 @media screen and (max-width:921px) {
 	
 	#h1_section1{
@@ -357,14 +364,17 @@ footer>div{
 		justify-content: space-around;
 	}
 	.logo_h1{
-		display: flex;
-		width: 50%;
+		width: auto;
 	}
 	#input_head{
 		width: 500px;
 	}
+	#nav_id > button{
+		font-size: 10px;
+		margin: 0;
+	}
 	#logo_sena{
-		width: 10%;
+		display: none;
 	}
 	.nav_sect{
 		width: 15%;
@@ -386,13 +396,37 @@ footer>div{
 		font-size: 14px;
 	}
 }
+@media screen and (max-width:769px){
+	.nav-link{
+		display: none;
+	}
+	#logo_sena{
+		display: none;
+	}
+	.logo_h1{
+		width: auto;
+	}
+	#input_head{
+		width: 100%;
+	}
+}
 @media screen and (max-width:481px) {
 	h1{
 		font-size: 15px;
 	}
+	#nav_id{
+		display: flex;
+		flex-direction: column;
+	}
+	#nav_id > button{
+		font-size: 10px;
+		margin: 0;
+	}
+	.nav-link{
+		display: none;
+	}
 	#logo_sena{
-		width: 10%;
-		height: 10%;
+		visibility: hidden;
 	}
 	.nav-link{
 		font-size: 12px;
@@ -401,6 +435,9 @@ footer>div{
 		border-right: solid 1px var(--vanillaTransparent);
 		padding-right: 5px;
 		margin-right: 5px;
+	}
+	#input_head{
+		width: auto;
 	}
 	#h1_section1{
 		font-size: 40px;

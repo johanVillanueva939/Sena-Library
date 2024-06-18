@@ -845,7 +845,7 @@ function login() {
 	let email = document.getElementById('email').value
 	let password = document.getElementById('password').value
 
-	if (email === '' && password === '') {
+	if (email === '' || password === '') {
 		alert('Algo salio mal, intenta de Nuevo');
 	} else {
 		alert('login exitoso');
@@ -861,7 +861,7 @@ function register() {
 	let cellphone = document.getElementById('cellphone').value;
 	let name = document.getElementById('name').value;
 	let password = document.getElementById('password').value;
-	if (name === '' && cc === '' && email === '' && cellphone === '' && password === '') {
+	if (name === '' || cc === '' || email === '' || cellphone === '' || password === '') {
 		alert('Algo salió mal, intenta de nuevo');
 	} else {
 		alert('Registro exitoso');
