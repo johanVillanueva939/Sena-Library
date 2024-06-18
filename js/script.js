@@ -420,7 +420,7 @@ function Normalbooks() {
 		
 
 		const img = document.createElement("img");
-		img.src = `Sena-Library/assets/books${getImageName(book.Title)}.jpg`;
+		img.src = `assets/books ${getImageName(book.Title)}.jpg`;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -516,8 +516,8 @@ function Normalbooks() {
 
 Normalbooks();
 
-function getImageName(title) {
-	const imageName = title.toLowerCase().replace(/[^a-z0-9- -ñ]+/g, '_');
+function getImageName(Title) {
+	const imageName = Title.toLowerCase().replace(/[^a-z0-9- -ñ]+/g, '_');
 	return imageName;
 }
 // search
