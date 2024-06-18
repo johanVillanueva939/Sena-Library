@@ -417,10 +417,9 @@ function Normalbooks() {
 		const title = document.createElement("h2");
 		title.textContent = book.Title;
 		div.appendChild(title);
-		
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = `assets/images/${getImageName(book.Title)}.jpg`;
 		img.alt = book.Title;
 		div.appendChild(img);
 
