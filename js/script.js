@@ -420,7 +420,7 @@ function Normalbooks(books) {
 		
 
 		const img = document.createElement("img");
-		img.src = `Sena-Library/assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = `Sena-Library/assets/books/${getImageName=(book.Title)}.jpg`;
 		img.alt = book.Title;
 		div.appendChild(img);
 
