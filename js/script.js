@@ -405,7 +405,7 @@ function addBook(title, author, gender, language, price, format, isbn, descripti
 
 
 
-function Normalbooks(books) {
+function Normalbooks() {
 	bookContainer.innerHTML = ""
 	const container = document.getElementById("bookContainer");
 	books.forEach((book) => {
