@@ -27,7 +27,7 @@ let books = [
 		Editorial: 'Reynal & Hitchcock',
 		Pages: 100,
 		Stock: 10,
-		Image: '/assets/books/Little prince.jpg'
+		Image: '/assets/books/Littleprince.jpg'
 	},
 
 	{
@@ -514,10 +514,6 @@ function Normalbooks() {
 	});
 }
 
-function getImageName(Image) {
-	const imageName = Image.toLowerCase().replace(/[^- -]+/g, '_');
-	return imageName;
-}
 Normalbooks();
 
 // search
