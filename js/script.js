@@ -27,6 +27,7 @@ let books = [
 		Editorial: 'Reynal & Hitchcock',
 		Pages: 100,
 		Stock: 10,
+		Image: '/assets/Little prince.jpg'
 	},
 
 	{
@@ -419,7 +420,7 @@ function Normalbooks() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `/assets/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
