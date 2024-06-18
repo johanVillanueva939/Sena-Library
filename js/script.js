@@ -46,6 +46,7 @@ let books = [
 		Editorial: 'J. B. Lippincott & Co.',
 		Pages: 300,
 		Stock: 20,
+		Image: 'assets/books/To kill a Monckingbird.jpg'
 	},
 
 	{
@@ -64,6 +65,7 @@ let books = [
 		Editorial: 'Penguin Classics',
 		Pages: 368,
 		Stock: 5,
+		Image: 'assets/books/Pride and Prejudice.jpg'
 	},
 
 	{
@@ -82,6 +84,7 @@ let books = [
 		Editorial: 'Bloomsbury Publishing',
 		Pages: 223,
 		Stock: 0,
+		Image: 'assets/books/Harry Potter and the Sorcerers Stone.jpg'
 	},
 
 	{
@@ -100,6 +103,7 @@ let books = [
 		Editorial: 'Scribner',
 		Pages: 180,
 		Stock: 9,
+		Image: 'assets/books/The Great Gatsby.jpg'
 	},
 
 	{
@@ -118,6 +122,7 @@ let books = [
 		Editorial: 'Houghton Mifflin Harcourt',
 		Pages: 310,
 		Stock: 1,
+		Image: 'assets/books/The Hobbit.jpg'
 	},
 
 	{
@@ -136,6 +141,7 @@ let books = [
 		Editorial: 'Houghton Mifflin Harcourt',
 		Pages: 1178,
 		Stock: 17,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -154,6 +160,7 @@ let books = [
 		Editorial: 'Penguin Classics',
 		Pages: 176,
 		Stock: 90,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -172,6 +179,7 @@ let books = [
 		Editorial: 'Vintage Español',
 		Pages: 417,
 		Stock: 50,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -190,6 +198,7 @@ let books = [
 		Editorial: 'HarperOne',
 		Pages: 208,
 		Stock: 100,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -208,6 +217,7 @@ let books = [
 		Editorial: 'Little, Brown and Company',
 		Pages: 224,
 		Stock: 50,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -226,6 +236,7 @@ let books = [
 		Editorial: 'Vintage Español',
 		Pages: 368,
 		Stock: 20,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -244,6 +255,7 @@ let books = [
 		Editorial: 'Vintage Español',
 		Pages: 128,
 		Stock: 30,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -262,6 +274,7 @@ let books = [
 		Editorial: 'Riverhead Books',
 		Pages: 320,
 		Stock: 15,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -280,6 +293,7 @@ let books = [
 		Editorial: 'Farrar, Straus and Giroux',
 		Pages: 304,
 		Stock: 20,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -298,6 +312,7 @@ let books = [
 		Editorial: 'Atria Books',
 		Pages: 496,
 		Stock: 10,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -316,6 +331,7 @@ let books = [
 		Editorial: 'Cátedra',
 		Pages: 124,
 		Stock: 15,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -334,6 +350,7 @@ let books = [
 		Editorial: 'Oxford University Press',
 		Pages: 256,
 		Stock: 0,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -352,6 +369,7 @@ let books = [
 		Editorial: 'Pantheon Books',
 		Pages: 576,
 		Stock: 5,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -370,6 +388,7 @@ let books = [
 		Editorial: 'Penguin Classics',
 		Pages: 272,
 		Stock: 10,
+		Image: 'assets/books/littlePrince.jpg'
 	}
 ];
 if ((actuallMonth === month1 || actuallMonth === month2) && (actuallDay === day1 || actuallDay === day2)) {
