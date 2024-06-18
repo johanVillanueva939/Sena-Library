@@ -420,7 +420,7 @@ function Normalbooks() {
 		
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = `/assets/books/${getImageName(book.Title)}.jpg`;
 		img.alt = book.Title;
 		div.appendChild(img);
 
