@@ -512,14 +512,15 @@ function Normalbooks() {
 		section.appendChild(div);
 		container.appendChild(section);
 	});
+	function getImageName(Title) {
+		const imageName = Title.toLowerCase().replace(/[^a-z0-9- -ñ]+/g, '_');
+		return imageName;
+	}
 }
 
 Normalbooks();
 
-function getImageName(Title) {
-	const imageName = Title.toLowerCase().replace(/[^a-z0-9- -ñ]+/g, '_');
-	return imageName;
-}
+
 // search
 
 function showBookCatalogue(books) {
