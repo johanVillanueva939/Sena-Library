@@ -27,7 +27,7 @@ let books = [
 		Editorial: 'Reynal & Hitchcock',
 		Pages: 100,
 		Stock: 10,
-		Image: '/assets/books/littlePrince.jpg'
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
