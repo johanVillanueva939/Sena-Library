@@ -27,6 +27,7 @@ let books = [
 		Editorial: 'Reynal & Hitchcock',
 		Pages: 100,
 		Stock: 10,
+		Image: 'assets/books/littlePrince.jpg'
 	},
 
 	{
@@ -45,6 +46,7 @@ let books = [
 		Editorial: 'J. B. Lippincott & Co.',
 		Pages: 300,
 		Stock: 20,
+		Image: 'assets/books/To kill a Monckingbird.jpg'
 	},
 
 	{
@@ -63,6 +65,7 @@ let books = [
 		Editorial: 'Penguin Classics',
 		Pages: 368,
 		Stock: 5,
+		Image: 'assets/books/Pride and Prejudice.jpg'
 	},
 
 	{
@@ -81,6 +84,7 @@ let books = [
 		Editorial: 'Bloomsbury Publishing',
 		Pages: 223,
 		Stock: 0,
+		Image: 'assets/books/Harry Potter and the Sorcerers Stone.jpg'
 	},
 
 	{
@@ -99,6 +103,7 @@ let books = [
 		Editorial: 'Scribner',
 		Pages: 180,
 		Stock: 9,
+		Image: 'assets/books/The Great Gatsby.jpg'
 	},
 
 	{
@@ -117,6 +122,7 @@ let books = [
 		Editorial: 'Houghton Mifflin Harcourt',
 		Pages: 310,
 		Stock: 1,
+		Image: 'assets/books/The Hobbit.jpg'
 	},
 
 	{
@@ -135,6 +141,7 @@ let books = [
 		Editorial: 'Houghton Mifflin Harcourt',
 		Pages: 1178,
 		Stock: 17,
+		Image: 'assets/books/The Lord of the Rings.jpg'
 	},
 
 	{
@@ -153,6 +160,7 @@ let books = [
 		Editorial: 'Penguin Classics',
 		Pages: 176,
 		Stock: 90,
+		Image: 'assets/books/Alices Adventures in Wonderland.jpg'
 	},
 
 	{
@@ -171,6 +179,7 @@ let books = [
 		Editorial: 'Vintage Español',
 		Pages: 417,
 		Stock: 50,
+		Image: 'assets/books/Cien años de soledad.jpg'
 	},
 
 	{
@@ -189,6 +198,7 @@ let books = [
 		Editorial: 'HarperOne',
 		Pages: 208,
 		Stock: 100,
+		Image: 'assets/books/The Alchemist.jpg'
 	},
 
 	{
@@ -207,6 +217,7 @@ let books = [
 		Editorial: 'Little, Brown and Company',
 		Pages: 224,
 		Stock: 50,
+		Image: 'assets/books/The Catcher in the Rye.jpg'
 	},
 
 	{
@@ -225,6 +236,7 @@ let books = [
 		Editorial: 'Vintage Español',
 		Pages: 368,
 		Stock: 20,
+		Image: 'assets/books/Love in the Time of Cholera.jpg'
 	},
 
 	{
@@ -243,6 +255,7 @@ let books = [
 		Editorial: 'Vintage Español',
 		Pages: 128,
 		Stock: 30,
+		Image: 'assets/books/Chronicle of a Death Foretold.jpg'
 	},
 
 	{
@@ -261,6 +274,7 @@ let books = [
 		Editorial: 'Riverhead Books',
 		Pages: 320,
 		Stock: 15,
+		Image: 'assets/books/The Sound of Things Falling.jpg'
 	},
 
 	{
@@ -279,6 +293,7 @@ let books = [
 		Editorial: 'Farrar, Straus and Giroux',
 		Pages: 304,
 		Stock: 20,
+		Image: 'assets/books/The Death of Artemio Cruz.jpg'
 	},
 
 	{
@@ -297,6 +312,7 @@ let books = [
 		Editorial: 'Atria Books',
 		Pages: 496,
 		Stock: 10,
+		Image: 'assets/books/The House of the Spirits.jpg'
 	},
 
 	{
@@ -315,6 +331,7 @@ let books = [
 		Editorial: 'Cátedra',
 		Pages: 124,
 		Stock: 15,
+		Image: 'assets/books/Pedro Páramo.jpg'
 	},
 
 	{
@@ -333,6 +350,7 @@ let books = [
 		Editorial: 'Oxford University Press',
 		Pages: 256,
 		Stock: 0,
+		Image: 'assets/books/The Posthumous Memoirs of Bras Cubas.jpg'
 	},
 
 	{
@@ -351,6 +369,7 @@ let books = [
 		Editorial: 'Pantheon Books',
 		Pages: 576,
 		Stock: 5,
+		Image: 'assets/books/Hopscotch.jpg'
 	},
 
 	{
@@ -369,6 +388,7 @@ let books = [
 		Editorial: 'Penguin Classics',
 		Pages: 272,
 		Stock: 10,
+		Image: 'assets/books/The Aleph.jpg'
 	}
 ];
 if ((actuallMonth === month1 || actuallMonth === month2) && (actuallDay === day1 || actuallDay === day2)) {
@@ -395,7 +415,8 @@ function addBook(title, author, gender, language, price, format, isbn, descripti
 		Location: prompt('Location: '),
 		Publication_day: prompt('Publication Day:\n\n MM-DD-AAAA '),
 		Pages: parseInt(prompt('Pages: ')),
-		Stock: parseInt(prompt('Stock: '))
+		Stock: parseInt(prompt('Stock: ')),
+		Image: prompt('image url: \n\n ')
 	};
 
 	books.push(newBook);
@@ -417,10 +438,9 @@ function Normalbooks() {
 		const title = document.createElement("h2");
 		title.textContent = book.Title;
 		div.appendChild(title);
-		
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -545,7 +565,7 @@ function showBookCatalogue(books) {
 		});
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -662,7 +682,7 @@ function pressPrices30_80() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -712,7 +732,7 @@ function mostExpensive() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -793,7 +813,7 @@ function pressPages() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -829,11 +849,11 @@ function login() {
 	let email = document.getElementById('email').value
 	let password = document.getElementById('password').value
 
-	if (email === '' && password === '') {
+	if (email === '' || password === '') {
 		alert('Algo salio mal, intenta de Nuevo');
 	} else {
 		alert('login exitoso');
-		console.log(' E-amil: '+email, '\n Contraseña: '+password);
+		console.log(' E-amil: ' + email, '\n Contraseña: ' + password);
 	}
 
 }
@@ -845,11 +865,11 @@ function register() {
 	let cellphone = document.getElementById('cellphone').value;
 	let name = document.getElementById('name').value;
 	let password = document.getElementById('password').value;
-	if (name === '' && cc === '' && email === '' && cellphone === '' && password === '') {
+	if (name === '' || cc === '' || email === '' || cellphone === '' || password === '') {
 		alert('Algo salió mal, intenta de nuevo');
 	} else {
 		alert('Registro exitoso');
-		console.log(' C.C: '+cc, '\n E-mail: '+email, '\n Telefono: '+cellphone, '\n Nombre: '+name, '\n Contraseña: '+password);
+		console.log(' C.C: ' + cc, '\n E-mail: ' + email, '\n Telefono: ' + cellphone, '\n Nombre: ' + name, '\n Contraseña: ' + password);
 	}
 }
 
@@ -881,7 +901,7 @@ function pressStock() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -996,7 +1016,7 @@ function pressLanguage() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -1073,7 +1093,7 @@ function pressEditorial() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -1155,7 +1175,7 @@ function pressGender(GenderOptions) {
 			div.appendChild(title);
 
 			const img = document.createElement("img");
-			img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+			img.src = book.Image;
 			img.alt = book.Title;
 			div.appendChild(img);
 
@@ -1235,7 +1255,7 @@ function pressAuthor() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -1313,7 +1333,7 @@ function PressPrice() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -1391,7 +1411,7 @@ function filterTitlesAZ() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
@@ -1468,7 +1488,7 @@ function filterTitlesZA() {
 		div.appendChild(title);
 
 		const img = document.createElement("img");
-		img.src = `assets/books/${getImageName(book.Title)}.jpg`;
+		img.src = book.Image;
 		img.alt = book.Title;
 		div.appendChild(img);
 
