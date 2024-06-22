@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/assets/Favicon/library-icon-png-20.png" type="image/x-icon" class="fav">
-	<link rel="stylesheet" href="style/styleSesioPage.css">
+	<link rel="stylesheet" href="../pages/styleSesioPage.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 			</section>
 			<section class="CC">
 				<p>Cedula de Ciudadania</p>
-				<input type="num" placeholder="Ingrese su C.C" id="cc">
+				<input type="num" value="<?php echo $id_user?>" placeholder="Ingrese su C.C" id="cc" >
 			</section>
 			<section class="name">
 				<p>Nombre Completo</p>
